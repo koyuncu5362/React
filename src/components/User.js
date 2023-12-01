@@ -1,10 +1,11 @@
 import PropTypes from'prop-types';
 
 
-function User({name,age}){
+function User({title,name,age}){
     // console.log(friends);
     return (
         <div>
+            <h1>{title}</h1>
             <div>{name} {age}</div>
 
         </div>
@@ -20,6 +21,8 @@ User.propTypes={
 //     age : PropTypes.number
 // }) // For First Commit 
 // }
-
+User.defaultProps={
+    title:"It's a header."
+}
 
 export default User

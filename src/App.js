@@ -9,8 +9,15 @@ const user={
 function App() {
   return (
     <div className="App" >
+      
       <div>Selam</div>
-      <User name="Metin" age="22"/>
+      <User 
+      title="Don't use Default Prop"
+
+      name="Metin" 
+      age={11}
+      
+      />
     </div>
     
   );
