@@ -1,17 +1,25 @@
-function User({data,friends}){
+import PropTypes from'prop-types';
 
-  
-    console.log(friends);
+
+function User({name,age}){
+    // console.log(friends);
     return (
         <div>
-            <div name="Metin" age="22"></div>
-            <h1>{data.name} {data.age}</h1>
-            <div>
-                {friends.map((friend,id)=>(
-                    <div key={id}>{friend}</div>
-                    ))}
-            </div>
+            <div>{name} {age}</div>
+
         </div>
     )
 }
+User.propTypes={
+    name :PropTypes.string.isRequired,
+    age : PropTypes.number
+}
+// User.propTypes={
+//     data : PropTypes.exact({
+//     name :PropTypes.string.isRequired,
+//     age : PropTypes.number
+// }) // For First Commit 
+// }
+
+
 export default User

@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App" >
       <div>Selam</div>
-      <User data={user} friends={["mahmut","ayşe","fatma"]}/>
+      <User name="Metin" age="22"/>
     </div>
     
   );
