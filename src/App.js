@@ -3,6 +3,7 @@ import './App.css';
 import User from './components/User';
 import Counter from './components/Counter';
 import UserV2 from './components/UserV2';
+import Colors from './components/Colors';
 
 const user={
   name :"Metin",
@@ -13,7 +14,7 @@ function App() {
     <div className="App" >
       
       <div>Selam</div>
-      <UserV2></UserV2>
+      <Colors></Colors>
     </div>
     
   );
