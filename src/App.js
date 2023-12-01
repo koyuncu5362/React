@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import User from './components/User';
+import Counter from './components/Counter';
 
 const user={
   name :"Metin",
@@ -11,13 +12,7 @@ function App() {
     <div className="App" >
       
       <div>Selam</div>
-      <User 
-      title="Don't use Default Prop"
-
-      name="Metin" 
-      age={11}
-      
-      />
+      <Counter/>
     </div>
     
   );
